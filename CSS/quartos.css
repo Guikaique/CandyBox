@@ -1,0 +1,113 @@
+
+            .card-container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+            }
+            
+            .card {
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 20px;
+                width: 250px;
+                text-align: center;
+                box-shadow: 5px 0px 15px;
+                transition: transform 0.2s;
+            }
+            
+            .card:hover {
+                transform: scale(1.05);
+            }
+            
+            .card .image {
+                height: 150px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+            }
+            
+            .card .text {
+                color: white;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+            }
+            
+            .card .title {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            
+            .card .price {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            
+            .details-container{
+                display:flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                
+            }
+            .details-card {
+                background-color: #ffffff;
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+                width: 40%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 5px 0px 15px;
+            }
+          
+            .details-image {
+                height: 400px;
+                background-size: cover;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+            
+            @media (max-width: 768px) {
+                .card-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .details-card {
+                    width: 100%;
+                }
+            }
+            
+            .saiba-mais {
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 50px;
+                padding: 10px 20px;
+                cursor: pointer;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                margin: 10px auto;
+                width: 100%;
+                transition: transform 0.5s;
+            }
+            .saiba-mais:hover{
+                color: #ccc;
+                transform: scale(1.05);
+            }
+            .reserve-agora {
+                border: none;
+                background-color: none;
+                color: black;
+                padding: 5px;
+                border-radius: 50px;
+                transition:  0.5s;
+            }
+            .reserve-agora:hover{
+                color: #ccc;
+                
+            }

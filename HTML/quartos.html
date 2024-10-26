@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel - Quartos</title>
+    <link rel="stylesheet" href="../CSS/quartos.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/Rodapé.css">
+    <link rel="stylesheet" href="../CSS/Font.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../HTML/login.html">Login</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../HTML/restaurante.html">Restaurante</a></li>
+                <li><a href="../HTML/quartos.html">Quartos</a></li>
+                <li><a href="../HTML/sobre.html">Sobre</a></li>
+                <li><a href="../HTML/serviços.html">Serviços</a></li>
+                <li><a href="../HTML/eventos.html">Eventos</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=81989754139" target="_blank">
+                    <i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/hostella_hotel?utm_source=qr" target="_blank">
+                    <i class="fab fa-instagram"></i></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="card-container">
+
+        <div class="card" data-type="QuartoBasico">
+            <div class="image" style="background-image: url('../Imagens/Quartos_e_Banheiros/01QuartoBasico.jpg');">
+                <span class="text">llll</span>
+            </div>
+            <span class="title">Quarto Básico</span>
+            <span class="price">R$ 1.500</span>
+            <a href="../HTML/reserva.html" class="reserve-agora">Reserve Agora</a>
+            <button class="saiba-mais" onclick="toggleDetails('details-card-1', ['../Imagens/Quartos_e_Banheiros/01QuartoBasico.jp', '../Imagens/Quartos_e_Banheiros/05banheirobasico.jpeg'])">Saiba mais</button>
+        </div>
+
+
+        <div class="card" data-type="QuartoMaster">
+            <div class="image" style="background-image: url('../Imagens/Quartos_e_Banheiros/Quarto\ Hotel\ Master.jpg');">
+                <span class="text"></span>
+            </div>
+            <span class="title">Quarto Master</span>
+            <span class="price">R$ 2.750</span>
+            <a href="../HTML/reserva.html" class="reserve-agora">Reserve Agora</a>
+            <button class="saiba-mais" onclick="toggleDetails('details-card-2', ['../Imagens/Quartos_e_Banheiros/Quarto Hotel Master.jpg', '../Imagens/Quartos_e_Banheiros/Banheiro-Master.jpeg'])">Saiba mais</button>
+        </div>
+
+
+        <div class="card" data-type="QuartoDeluxe">
+            <div class="image" style="background-image: url('../Imagens/Quartos_e_Banheiros/04QuartoDeluxe.jpg');">
+                <span class="text"></span>
+            </div>
+            <span class="title">Quarto Deluxe</span>
+            <span class="price">R$ 3.900</span>
+            <a href="../HTML/reserva.html" class="reserve-agora">Reserve Agora</a>
+            <button class="saiba-mais" onclick="toggleDetails('details-card-3', ['../Imagens/Quartos_e_Banheiros/04QuartoDeluxe.jpg', '../Imagens/Quartos_e_Banheiros/Banheiro-Deluxe.jpeg'])">Saiba mais</button>
+        </div>
+    </div>
+
+    <div class="details-container">
+    <div class="details-card" id="details-card-1" style="display: none;">
+        <div class="details-image" style="background-image: url('../Imagens/Quartos_e_Banheiros/01QuartoBasico.jpg');"></div>
+        <div class="details-description">
+            <h3>Simples e confortável.</h3>
+            <p>Quarto básico ideal para estadias curtas, com uma cama de solteiro e Wi-Fi grátis.</p>
+        </div>
+    </div>
+
+    <div class="details-card" id="details-card-2" style="display: none;">
+        <div class="details-image" style="background-image: url('../Imagens/Quartos_e_Banheiros/Quarto\ Hotel\ Master.jpg');"></div>
+        <div class="details-description">
+            <h3>Luxuoso e espaçoso.</h3>
+            <p>O Quarto Master oferece uma cama king size, varanda e vista panorâmica do mar.</p>
+        </div>
+    </div>
+
+    <div class="details-card" id="details-card-3" style="display: none;">
+        <div class="details-image" style="background-image: url('../Imagens/Quartos_e_Banheiros/04QuartoDeluxe.jpg');"></div>
+        <div class="details-description">
+            <h3>Deluxe Premium.</h3>
+            <p>Quarto Deluxe com decoração moderna, jacuzzi privativa e serviços exclusivos.</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>© 2024 Hostella Hotel. Todos os direitos reservados.</p>
+    <p>CNPJ: 125.347.770/0001-00</p>
+    <p>Contato: (81) 9897-45105</p>
+    <p>E-mail: hostellahostella@gmail.com</p>
+</footer>
+
+    <script src="../JavaScript/quartos.js"></script>
+</body>
+
+</html>

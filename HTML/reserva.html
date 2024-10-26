@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplo avançado de estrutura HTML com CSS e JavaScript">
+    <link rel="stylesheet" href="../CSS/reserva.css">
+    <link rel="stylesheet" href="../CSS/menu.css">   
+    <link rel="stylesheet" href="../CSS/Rodapé.css">
+    <link rel="stylesheet" href="../CSS/Font.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../HTML/login.html">Login</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../HTML/restaurante.html">Restaurante</a></li>
+                <li><a href="../HTML/quartos.html">Quartos</a></li>
+                <li><a href="../HTML/sobre.html">Sobre</a></li>
+                <li><a href="../HTML/serviços.html">Serviços</a></li>
+                <li><a href="../HTML/eventos.html">Eventos</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=81989754139" target="_blank">
+                    <i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/hostella_hotel?utm_source=qr" target="_blank">
+                    <i class="fab fa-instagram"></i></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Página de Pré Reserva</h1>
+            <div class="textoff">
+                <h4>Para fazer a pré reserva através do nosso site, preencha os campos abaixo com as informações necessárias, receberemos sua solicitação e responderemos o mais rápido possível.</h4>
+            
+            <h4>Um E-mail de um dos nossos atendentes ou parceiros irá lhe atender em até 48 horas.</h4>
+            <br>
+            <h1>Nossas Suítes Principais e algumas de suas características</h1>
+            </div>
+            <section>
+                <div class="galeria-imagens">
+                    <div class="grid-container">
+
+                        <div class="grid-item">
+                            <h3>Suite Master</h3>
+                            <p>Nossa Suite mais equilibrada entre luxo e conforto, aqui vamos ter tudo que a Suite Básica tem e mais um pouco.</p>
+                           
+                            <img src="../Imagens/Quartos_e_Banheiros/Quarto Hotel Master.jpg" alt="Suite Master" class="imagem-zoom">
+                        </div>
+
+                        <div class="grid-item">
+                            <h3>Cinema Master</h3>
+                            <p>Nosso Cinema Master traz tudo que há de bom em um cinema, com filme à escolha da família.</p>
+                           
+                            <img src="../Imagens/ÁreadeEventos/Cinemax Master.jpeg" alt="Cinema Master" class="imagem-zoom">
+                        </div>
+
+                        <div class="grid-item">
+                            <h3>Suite Deluxe</h3>
+                            <p>A nossa Suite Deluxe acompanha todo o luxo necessário para você que é exigente.</p>
+                          
+                            <img src="../Imagens/Quartos_e_Banheiros/04QuartoDeluxe.jpg" alt="Suite Deluxe" class="imagem-zoom">
+                        </div>
+
+                        <div class="grid-item">
+                            <h3>Cinema Deluxe</h3>
+                            <p>Cinema exclusivo com parceria com a CINEMAX, onde você e sua família podem assistir a lançamentos.</p>
+                           
+                            <img src="../Imagens/ÁreadeEventos/Cinemax Deluxe.jpeg" alt="Cinema Deluxe" class="imagem-zoom">
+                        </div>
+
+                        <div class="grid-item">
+                            <h3>Piscina</h3>
+                            <p>Laser e muito diversão com uma visão incrível.</p>
+                       
+                            <img src="../Imagens/ÁreadeEventos/Piscina.jpeg" alt="Piscina" class="imagem-zoom">
+                        </div>
+                        <div class="grid-item">
+                            <h3>Sacada</h3>
+                            <p>Tenha momentos únicos com uma das nossas sacadas.</p>
+                           
+                            <img src="../Imagens/EntradaeCorredores/SacadadeHotel..jpeg" alt="Sacada" class="imagem-zoom">
+                        </div>
+                        <div class="grid-item">
+                            <h3>Salão de Festa</h3>
+                            <p>Salão de festa com todo tom moderno e luxuoso.</p>
+                            <img src="../Imagens/ÁreadeEventos/Salão de Festa.jpeg" alt="Salão de Festa" class="imagem-zoom">
+                        </div>
+                        <div class="grid-item">
+                            <h3>Restaurante</h3>
+                            <p>Nosso restaurante de luxo.</p>
+                            <br>
+                            <img src="../Imagens/Restaurante/restaurante.jpeg" alt="Restaurante" class="imagem-zoom">
+                        </div>
+                    </div>
+                </div>
+
+                <section class="Fundo">
+                    <h2>Faça uma pré-reserva</h2>
+                    <form id="formulario-contato">
+                        
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000" required>
+
+                        <label for="quantidade de adultos">SELECIONE A QUANTIDADE DE ADULTOS:</label>
+                        <select id="quantidade-adultos" name="quantidade-adultos">
+                            <option value="">Selecione uma opção</option>
+                            <option value="1 ADULTO">1</option>
+                            <option value="2 ADULTOS">2</option>
+                            <option value="3 ADULTOS">3</option>
+                            <option value="4 ADULTOS">4</option>
+                            <option value="MAIS DE 5 ADULTOS">MAIS DE 5 ADULTOS</option>
+                        </select>
+                        <div id="aviso-adultos" class="aviso">Por favor, informe abaixo as informações necessárias sobre os adultos.</div>
+                        <label for="quantidade de crianças">QUANTIDADE DE CRIANÇAS:</label>
+                        <select id="quantidade-criancas" name="quantidade-criancas">
+                            <option value="">Selecione uma opção</option>
+                            <option value="nenhuma criança">n/a</option>
+                            <option value="1 CRIANÇAS">1</option>
+                            <option value="2 CRIANÇAS">2</option>
+                            <option value="3 CRIANÇAS">3</option>
+                            <option value="4 CRIANÇAS">4</option>
+                            <option value="MAIS DE 4 CRIANÇAS">MAIS DE 4 CRIANÇAS</option>
+                        </select>
+                        <div id="aviso-criancas" class="aviso">Por favor, informe abaixo as informações necessárias sobre as crianças.</div>
+
+
+                        <label for="suite">Seleção de suite:</label>
+                        <select id="suite" name="suite">
+                            <option value="">Selecione uma opção</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Master">Master</option>
+                            <option value="Deluxe">Deluxe</option>
+                        </select>
+
+
+                        <label for="checkin">Check-in</label>
+                        <input type="date" id="checkin" name="checkin" required>
+
+                        <label for="checkout">Check-out</label>
+                        <input type="date" id="checkout" name="checkout" required>
+
+
+                        
+                   
+
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui"></textarea>
+
+
+                        <button type="submit" id="botao-enviar">Enviar</button>
+                    </form>
+                    <div id="resposta"></div>
+                </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Hostella Hotel. Todos os direitos reservados.</p>
+        <p>CNPJ: 125.347.770/0001-00</p>
+        <p>Contato: (81) 9897-45105</p>
+        <p>E-mail: hostellahostella@gmail.com</p>
+    </footer>
+
+    <script src="../JavaScript/reserva.js">
+    </script>
+</body>
+
+</html>

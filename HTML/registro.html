@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de registro para o Projeto Hotel Hostella">
+    <title>Registro - Projeto Hotel Hostella</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/Font.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body class="register-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../HTML/login.html">Login</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../HTML/restaurante.html">Restaurante</a></li>
+                <li><a href="../HTML/quartos.html">Quartos</a></li>
+                <li><a href="../HTML/sobre.html">Sobre</a></li>
+                <li><a href="../HTML/serviços.html">Serviços</a></li>
+                <li><a href="../HTML/eventos.html">Eventos</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=81989754139" target="_blank">
+                    <i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/hostella_hotel?utm_source=qr" target="_blank">
+                    <i class="fab fa-instagram"></i></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="Fundo">
+    <div class="wrapper">
+        <form action="#">
+            <h2>Registro</h2>
+            <div class="input-field">
+                <input type="text" required>
+                <label>Nome Completo</label>
+            </div>
+            <div class="input-field">
+                <input type="date" id="data-nascimento" name="data-nascimento">
+                <i class="calendar-icon"></i>
+            </div>
+            <div class="input-field">
+                <input type="tel" id="telefone" name="telefone" required>
+                <label for="telefone">Número de Telefone</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="cpf" name="cpf" required>
+                <label for="cpf">CPF</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="rg" name="rg" required>
+                <label for="rg">RG</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="cep" name="cep" required>
+                <label for="cep">CEP</label>
+            </div>
+            <div class="input-field">
+                <input type="text" required>
+                <label>Endereço</label>
+            </div>
+            <div class="input-field">
+                <input type="text" required>
+                <label>Bairro</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="cep" name="cep" required>
+                <label for="cep">CEP</label>
+            </div>
+            <div class="input-field">
+                <input type="text" required>
+                <label>E-mail</label>
+            </div>
+            <div class="input-field">
+                <input type="password" required>
+                <label>Senha</label>
+            </div>
+            <button class="btnEntrar" type="submit">Registrar</button>
+            <div class="register">
+                <p>Já tem uma conta? <a href="../HTML/login.html">Faça login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7/inputmask.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            Inputmask("(99) 99999-9999").mask("#telefone");
+            Inputmask("999.999.999-99").mask("#cpf");
+            Inputmask("99.999.999-9").mask("#rg");
+            Inputmask("99999-999").mask("#cep");
+        });
+    </script>
+</section>
+</body>
+</html>

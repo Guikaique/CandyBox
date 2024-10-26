@@ -1,0 +1,47 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #ffffff;
+    }
+    
+    header {
+        background-color: #e0c424;
+        color: #fff;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin-bottom: 0.5rem;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    section {
+        margin: 1rem 0;
+    }

@@ -1,0 +1,229 @@
+
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        color: white;
+        overflow-x: hidden;
+    }
+    
+    .sobre-container {
+        position: relative;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .sobre-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('');
+        background-size: cover;
+        background-position: center;
+        transition: opacity 1s ease-in-out;
+        opacity: 1;
+    }
+    
+    .sobre-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('');
+        background-size: cover;
+        background-position: center;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+    
+    header {
+        background-color: #e0c424;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    header h1 {
+        margin-bottom: 0.5rem;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .content {
+        position: relative;
+        z-index: 2;
+        width: 80%;
+        max-width: 900px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    .content h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .sobre-container {
+        margin-top: 60px;
+    }
+    
+    .container {
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+    }
+    
+    .content {
+        flex: 3;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+    
+    .slider {
+        flex: 4;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 1s ease-in-out;
+        height: 100%;
+    }
+    
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .photo-bubbles {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .bubble {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+    
+    .bubble img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .bubble:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .photo-bubbles h4 {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 20px;
+        color: #e0c424;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    .info-section {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: center;
+    }
+    
+    .info-section img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .info-section p {
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #e0c424;
+    }
